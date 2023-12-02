@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_person_24"
+            android:title="User Profile"/>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_pets_24"
+            android:title="Dog School"/>
+        <item
+            android:id="@+id/nav_photo"
+            android:icon="@drawable/nav_photo"
+            android:title="Photos"/>
+
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/nav_map"
+            android:title="Map"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_about"
+            android:title="About Pets"/>
+    </group>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pet_sitter"
+            android:icon="@drawable/baseline_supervised_user_circle_24"
+            android:title="Pet Sitter"/>
+        <item
+            android:id="@+id/nav_chatbot"
+            android:icon="@drawable/icon_chatbot"
+            android:title="Chatbot"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/nav_logout"
+            android:title="Logout"/>
+
+
+
+
+    </group>
+
+</menu>

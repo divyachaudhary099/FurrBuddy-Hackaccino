@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+   <ImageView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:src="@drawable/ic_launcher_background"
+       android:id="@+id/person_image"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/baseline_edit_24"
+        android:padding="3dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_toEndOf="@+id/person_image"
+        android:layout_below="@id/person_image"
+        android:layout_marginTop="-20dp"
+        android:layout_marginStart="-10dp"
+        android:background="@drawable/image_btn_custom_edit"
+        android:id="@+id/edit_profile"
+        app:tint="@color/orange" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/person_image"
+        android:id="@+id/per_info_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Pet Name"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:id="@+id/pet_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Owner Name"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/owner_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Pet Category"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:id="@+id/pet_category" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Pet Breed"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:id="@+id/pet_breed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Pet Age"
+            android:textSize="14sp"
+            android:id="@+id/pet_age" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/person_image"
+        android:id="@+id/edit_pet_info">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pet_name_text_input_layout"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            tools:ignore="ExtraText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter pet name"
+                android:maxLines="1"
+                android:id="@+id/pet_name_edit_text" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pet_owner_text_input_layout"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter pet owner name"
+                android:maxLines="1"
+                android:id="@+id/pet_owner_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pet_category_text_input_layout"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter pet category"
+                android:maxLines="1"
+                android:id="@+id/pet_category_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pet_breed_text_input_layout"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter pet breed"
+                android:maxLines="1"
+                android:id="@+id/pet_breed_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pet_age_text_input_layout"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter pet age"
+                android:maxLines="1"
+                android:id="@+id/pet_age_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="30dp"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        android:backgroundTint="@color/orange"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/edit_profile_btn" />
+
+
+</RelativeLayout>
